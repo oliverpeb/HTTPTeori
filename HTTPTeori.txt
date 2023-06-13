@@ -1,0 +1,20 @@
+a. HTTP protokollen:
+   - HTTP står for "HyperText Transfer Protocol".
+   - Det er en protokol, der bruges til at sende og modtage filer på internettet.
+   - HTTP arbejder som en anmodnings- og svar-protokol mellem en klient og en server.
+   - HTTP-forespørgsler inkluderer metoder som GET (henter ressourcer), POST (sender data til en server), PUT (opdaterer eksisterende ressourcer) og DELETE (sletter ressourcer).
+   
+b. Relevante HTTP-statuskoder:
+   - 200 OK: Anmodningen var vellykket.
+   - 201 Created: Anmodningen blev behandlet, og en ny ressource blev oprettet som resultat.
+   - 204 No Content: Anmodningen blev behandlet med succes, men der er ingen repræsentation at returnere (dvs. ressourcen er tom).
+   - 400 Bad Request: Serveren kunne ikke forstå anmodningen på grund af ugyldig syntaks.
+   - 404 Not Found: Serveren fandt ikke en matchende ressource.
+   - 500 Internal Server Error: Serveren stødte på en uventet tilstand, der forhindrede den i at opfylde anmodningen.
+
+c. REST brug af HTTP-protokollen:
+   - REST står for "Representational State Transfer". Det er en arkitektur, der bruges til at designe netværksapplikationer.
+   - REST bruger HTTP-protokollen til at oprette, læse, opdatere og slette data.
+   - Disse operationer svarer til CRUD-operationer i databehandling.
+   - I en RESTful-arkitektur adresseres ressourcer (dataentiteter) med URL'er (Uniform Resource Locators), og de håndteres ved hjælp af standard HTTP-metoder. For eksempel, en GET-forespørgsel til "/users/1" ville hente det første brugerobjekt, og en DELETE-forespørgsel til den samme URL ville slette det.
+   - RESTful API'er skal være stateless, hvilket betyder, at serveren ikke skal huske noget om klientens tilstand mellem anmodninger.
